@@ -1,0 +1,24 @@
+<div class="Alfashop">
+    <p>Alfashop</p>
+</div>
+  
+<div class="tabla_container">
+    <table class="tabla">
+      <tr>
+        <td class="imagen">
+          <img src="../Imagenes/usuario.png">
+        </td>
+      </tr>
+      <tr>
+        <td class="formulario_register">
+          <h2>Registrar comprador</h2>
+          <input type="text" id="names" placeholder="Nombres" [(ngModel)]="names">
+          <input type="text" id="lastNames" placeholder="Apellidos" [(ngModel)]="lastNames">
+          <input type="text" id="email" placeholder="Correo electrónico" [(ngModel)]="email">
+          <input type="password" id="password" placeholder="Contraseña" [(ngModel)]="password">
+          <input type="number" id="number" placeholder="Teléfono" [(ngModel)]="phoneNumber">
+          <button id="registerButton" (click)="registrarComprador()">Registrarse</button>
+        </td>
+      </tr>
+    </table>
+</div>

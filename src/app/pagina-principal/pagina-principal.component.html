@@ -1,0 +1,39 @@
+<header>
+    <section class="cabecera_superior">
+        <h1>Alfashop</h1>
+        <img src="../Imagenes/logo.png" alt="Logo">
+    </section>
+    <section class="cabecera_inferior">
+        <div class="barra_busqueda">
+            <input type="text" id="producto" placeholder="Buscar producto" [(ngModel)]="productoBuscado">
+            <button class="btnBuscar" (click)="buscarProducto()">Buscar</button>
+        </div>
+        <button class="btnUsuario">Usuario</button>
+    </section>
+</header>
+
+<main>
+    <div class="categoria">
+        <h2>Categoría 1</h2>
+        <div class="productos_grupo">
+            <a routerLink="pagina-producto1" class="producto" (click)="verDetalleProducto('Producto 1')">
+                <img src="imagen1.jpg" alt="Producto 1">
+                <div class="descripcion">
+                    <h3>Producto 1</h3>
+                    <div class="precio">$10.99</div>
+                </div>
+            </a>
+            <!-- Resto de productos -->
+        </div>
+    </div>
+
+    <!-- Resto de categorías y productos -->
+</main>
+
+<footer>
+    <div class="informacion">
+        <p>Contacto: info@minimarket.com</p>
+        <p>Dirección: Calle Principal #123</p>
+    </div>
+    <button class="btnVolverArriba"><i class="fas fa-arrow-up"></i></button>
+</footer>
